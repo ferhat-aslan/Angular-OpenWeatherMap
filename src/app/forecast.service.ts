@@ -20,7 +20,7 @@ export class ForecastService {
           return new HttpParams().set('lon',value.coords.longitude)
           .set('lat',value.coords.latitude)
           .set('units','metric')
-          .set('appid','204fe4a0bdd1fe5394fc7cc1748f2b5f')
+          .set('appid','buraya api')
       }),switchMap((values:any)=>{
         return this.http.get('https://api.openweathermap.org/data/2.5/forecast',{params:values})
       })
