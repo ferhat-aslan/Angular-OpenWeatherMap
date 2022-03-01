@@ -7,7 +7,7 @@ import {map,switchMap} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ForecastService {
-
+ 
   constructor(private http:HttpClient) { }
   getWeatherForecast(){
     return new Observable((observer)=>{
@@ -20,8 +20,9 @@ export class ForecastService {
           return new HttpParams().set('lon',value.coords.longitude)
           .set('lat',value.coords.latitude)
           .set('units','metric')
-          .set('appid','buraya api')
-      }),switchMap((values:any)=>{
+          .set('appid','204fe4a0bdd1fe5394fc7cc1748f2b5f')
+      }),
+      switchMap((values:any)=>{
         return this.http.get('https://api.openweathermap.org/data/2.5/forecast',{params:values})
       })
       )

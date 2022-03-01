@@ -1,6 +1,8 @@
 .timeline{
     display:grid;
     grid-template-columns: repeat(8,3rem);
+    justify-content: center;
+    text-align: center;
 }
 h1{
     grid-column: 1/-1;
@@ -8,8 +10,26 @@ h1{
 .temp{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .sub{
     border-left: thin orange solid;
     padding: .7em;
+}
+.card{
+    min-width: 55vw;
+    min-height: 15vw;
+    margin: 1rem 5rem 5rem 5rem;
+    background-color: hsl(207, 14%, 46%);
+}
+.cardup{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resim{
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }

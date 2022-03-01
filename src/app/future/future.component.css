@@ -1,6 +1,6 @@
 .main{
     display: grid;
-    grid-template-columns: repeat(5,6rem);
+    grid-template-columns: repeat(5);
 }
 .icon{
     height: 2em;
@@ -13,4 +13,22 @@
 }
 .selected{
     font-weight: bold;
+}
+.primary{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.card-img-top{
+    height: 7vw;
+    width: 7vw;
+}
+.card{align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(207, 14%, 46%);
+}
+table{
+    background-color: hsl(207, 14%, 46%);
 }
